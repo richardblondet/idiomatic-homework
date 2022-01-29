@@ -1,7 +1,10 @@
+<!-- 
+ @see https://github.com/richardblondet/idiomatic-homework
+ -->
+
 <div align="center">
 <h1>Idiomatic Homework Source</h1>
 <img src="public/screenshot.png" />
-<p><a href="requirements.md">Requirements</a></p>
 </div>
 <hr />
 
