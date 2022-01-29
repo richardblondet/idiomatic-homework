@@ -21,7 +21,7 @@ const INITIAL_LIST = [
 function App() {
   const [filter, setFilter] = useState('');
   const [list, setList] = useLocalStorage<DataType[]>("data", INITIAL_LIST);
-  const [selected, setSelected] = useState<number | undefined>(1);
+  const [selected, setSelected] = useState<number | undefined>(undefined);
   const [editor, setEditor] = useState<DataType | null>(null);
   
 
