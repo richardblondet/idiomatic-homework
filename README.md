@@ -1,9 +1,11 @@
 <div align="center">
+<h1>Idiomatic Homework Source</h1>
 <img src="public/screenshot.png" />
+<p><a href="requirements.md">Requirements</a></p>
 </div>
 <hr />
 
-# Getting Started with Create React App
+# Getting Started
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
@@ -33,6 +35,10 @@ The build is minified and the filenames include the hashes.\
 Your app is ready to be deployed!
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+
+### `npm run serve`
+
+Serves the contents of the production built app in `build` directory to [http://localhost:3333](http://localhost:3333) 
 
 
 [React documentation](https://reactjs.org/).
