@@ -21,7 +21,7 @@ export default function ListBox<T>({ items, setSelectedItem, renderItemLabel, se
       return true;
     };
     return items.filter(filterByPropertyStartsWith);
-  }, [filter, items]);
+  }, [items, filter, filterProperty]);
 
   const ListItems = () => (
     <ul>

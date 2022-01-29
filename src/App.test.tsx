@@ -15,6 +15,7 @@ test('All elements are present', () => {
   const label1 = screen.getByText(/Polar Bear/i);
   const label2 = screen.getByText(/Black Bear/i);
   const label3 = screen.getByText(/Brown Bear/i);
+  const label4 = screen.getByText(/Grizzly Bear/i);
 
   expect(T_name).toBeInTheDocument();
   expect(L).toBeInTheDocument();
@@ -25,4 +26,5 @@ test('All elements are present', () => {
   expect(label1).toBeInTheDocument();
   expect(label2).toBeInTheDocument();
   expect(label3).toBeInTheDocument();
+  expect(label4).toBeInTheDocument();
 });

@@ -15,12 +15,13 @@ const INITIAL_LIST = [
   { name: "Polar", surname: "Bear" },
   { name: "Black", surname: "Bear" },
   { name: "Brown", surname: "Bear" },
+  { name: "Grizzly", surname: "Bear" },
 ];
 
 function App() {
   const [filter, setFilter] = useState('');
   const [list, setList] = useLocalStorage<DataType[]>("data", INITIAL_LIST);
-  const [selected, setSelected] = useState<number | undefined>();
+  const [selected, setSelected] = useState<number | undefined>(1);
   const [editor, setEditor] = useState<DataType | null>(null);
   
 
@@ -94,12 +95,12 @@ function App() {
               <TextField 
                 name="T_name"
                 label="Name"
-                value={editor && editor.name || ''}
+                value={editor ? editor.name : ''}
                 span="4"
                 onChange={(e: React.ChangeEvent<HTMLInputElement>) => {
                   setEditor({
                     name: e.target.value,
-                    surname: editor && editor.surname || ''
+                    surname: editor ? editor.surname : ''
                   });
                 }}
               />
@@ -108,11 +109,11 @@ function App() {
               <TextField 
                 name="T_surname"
                 label="Surname"
-                value={editor && editor.surname || ''}
+                value={editor ? editor.surname : ''}
                 span="4"
                 onChange={(e: React.ChangeEvent<HTMLInputElement>) => {
                   setEditor({
-                    name: editor && editor.name || '',
+                    name: editor ? editor.name : '',
                     surname: e.target.value,
                   });
                 }}
